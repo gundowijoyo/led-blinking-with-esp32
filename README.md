@@ -1,15 +1,16 @@
-# let-blinking-with-arduino
+# led-blinking-with-esp32
 
-# Tata Cara
+# Step-Step
 1. Siapkan text editor Arduinodroid dikarenakan saya menggunakan handphone.
 2. Siapkan breadboard mb-102
 3. Siapkan board esp32 Dev-Kit v1 sebagai microkontroller nya.
 4. Siapkan kabel jumper Male To Female.
-5. Siapkan LED mini dan resistor 220 Ohm.
-6. Jangan lupa kopi hangat nya.
-
+5. Siapkan LED.
+6. Resistor 220 Ohm 1/2watt.
+7. Siapkan kabel OTG.
+8. Siapkan kabel charger type c.
+   
 # Link Bahan-Bahan
-
 <p>
  1. Text Editor ArduinoDroid  <a href="https://play.google.com/store/apps/details?id=name.antonsmirnov.android.arduinodroid2">Download</a>
 </p>
