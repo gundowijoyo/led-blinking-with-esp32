@@ -48,3 +48,4 @@
 8. Kabel charger type c
 </p>
 
+<a href="https://saweria.co/GundoWijoyo">Saweria</a>
