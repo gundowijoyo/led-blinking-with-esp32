@@ -1,4 +1,4 @@
-# led-blinking-with-esp32
+# led blinking using esp32
 
 # Step-Step
 1. Siapkan text editor Arduinodroid dikarenakan saya menggunakan handphone.
