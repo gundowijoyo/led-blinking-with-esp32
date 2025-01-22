@@ -48,6 +48,65 @@
 8. Kabel charger type c
 </p>
 
+
+### Komponen yang Diperlukan:
+1. **ESP32**
+2. **LED**
+3. **Resistor** (220 Ohm)
+4. **Kabel Jumper**
+
+### Penyambungan Rangkaian:
+1. **3.3V ESP32 ke Resistor**:
+   - Sambungkan pin **3V3** pada ESP32 ke satu ujung resistor.
+   
+2. **Resistor ke Anoda LED (Kaki Panjang)**:
+   - Sambungkan ujung resistor yang lain ke kaki panjang LED (anoda).
+
+3. **GPIO 23 ke Katoda LED (Kaki Pendek)**:
+   - Sambungkan pin **GPIO 23** pada ESP32 ke kaki pendek LED (katoda).
+
+4. **Pin GND pada ESP32**:
+   - Anda tidak perlu menghubungkan GND secara langsung di sini karena sudah terhubung melalui jalur arus dari GPIO dan 3.3V, tetapi pastikan rangkaian lain di ESP32 terhubung dengan ground untuk kelancaran kerja.
+
+### Diagram Sederhana:
+
+```
+[ESP32]      [Resistor]      [LED]      [GPIO 23]
+   |--- 3.3V ----/\/\/\/\----|>|---->|
+```
+
+### Penjelasan Rangkaian:
+1. **3.3V ke Resistor**:
+   - Anda menggunakan pin **3.3V** pada ESP32 untuk memberi daya pada LED melalui resistor yang membatasi arus agar LED tidak rusak.
+   
+2. **Resistor ke Anoda LED**:
+   - Resistor terhubung ke **anoda (kaki panjang)** LED. Ini membatasi arus yang mengalir ke LED.
+   
+3. **GPIO 23 ke Katoda LED**:
+   - **GPIO 23** digunakan untuk mengontrol LED. Ketika GPIO 23 diset ke **HIGH**, LED akan menyala. Ketika GPIO 23 diset ke **LOW**, LED akan mati. GPIO ini menghubungkan ke kaki pendek LED (katoda), dan dengan cara ini, GPIO 23 akan mengontrol sirkuit ground LED.
+
+### Kode yang Digunakan:
+Kode yang Anda berikan tetap berlaku, karena logika pengendalian LED tetap sama, hanya saja dalam rangkaian ini, Anda menghubungkan GPIO 23 ke katoda LED dan menggunakan 3.3V untuk memberi daya ke LED.
+
+```cpp
+void setup() {
+  // Set GPIO 23 sebagai output
+  pinMode(23, OUTPUT);
+}
+
+void loop() {
+  // Menyalakan LED
+  digitalWrite(23, HIGH);
+  delay(1000); // LED menyala selama 1 detik
+  
+  // Mematikan LED
+  digitalWrite(23, LOW);
+  delay(1000); // LED mati selama 1 detik
+}
+```
+
+Dengan rangkaian ini, LED akan berkedip sesuai dengan interval waktu yang telah Anda tentukan dalam kode (1 detik menyala dan 1 detik mati).
+
 <a href="https://saweria.co/GundoWijoyo">Saweria</a>
 
 Terimakasih semuanya 😊
