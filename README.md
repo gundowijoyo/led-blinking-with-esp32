@@ -31,7 +31,19 @@
    OTG in dinami micro type c
  </a>
 </p>
+
 <p>
-6. Kabel charger type c
+ 6. Link Pembelian<a href="https://id.shp.ee/U8AKRbK">
+   LED
+ </a>
+</p>
+<p>
+ 7. Link Pembelian<a href="https://id.shp.ee/BzbPrA5">
+   Resistor 220 Ohm 1/2watt
+ </a>
+</p>
+
+<p>
+8. Kabel charger type c
 </p>
 
