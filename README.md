@@ -49,3 +49,5 @@
 </p>
 
 <a href="https://saweria.co/GundoWijoyo">Saweria</a>
+
+Terimakasih semuanya 😊
